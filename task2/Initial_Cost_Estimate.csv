@@ -1,0 +1,17 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Initial_Cost_Estimate,US East (N. Virginia),Route 53 for social media,Amazon Route 53,0,0.9,10.8,USD,Hosted Zones (1)
+Initial_Cost_Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,78.93,947.16,USD,Number of NAT Gateways (1)
+Initial_Cost_Estimate,US East (N. Virginia),s3 for social media,S3 Standard,0,235.52,2826.24,USD,S3 Standard storage (10 TB per month)
+Initial_Cost_Estimate,US East (N. Virginia),S3 Glacier for social media,Amazon S3 Glacier (Glacier API only),0,409.6,4915.2,USD,S3 Glacier storage (100 TB per month)
+Initial_Cost_Estimate,US East (N. Virginia),Data Transfer for social media,AWS Data Transfer,0,44.91,538.92,USD,"DT Inbound: Internet (2 TB per month), DT Outbound: Internet (500 GB per month), DT Intra-Region: (0 TB per month), Data transfer cost (44.91)"
+Initial_Cost_Estimate,US East (N. Virginia),web server for social media,Amazon EC2,0,415.22,4982.64,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (200 GB), Instance type (a1.4xlarge)"
+Initial_Cost_Estimate,US East (N. Virginia),application server for social media,Amazon EC2,0,724.88,8698.56,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (500 GB), Instance type (c5.4xlarge)"
+Initial_Cost_Estimate,US East (N. Virginia),Mysql for RDS,Amazon RDS for MySQL,0,5909.44,70913.28,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (2 TB), Quantity (2), Instance type (db.m5.4xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (10 TB)"
+Initial_Cost_Estimate,US East (N. Virginia),Loda Balancing for social media,Application Load Balancer,0,616.85,7402.2,USD,Number of Application Load Balancers (2)
+Initial_Cost_Estimate,US East (N. Virginia),IP for EC2,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (4), Number of EIPs per instance (1)"
+Initial_Cost_Estimate,US East (N. Virginia),KMS for social media,AWS Key Management Service,0,16,192,USD,"Number of customer managed Customer Master Keys (CMK) (10), Number of symmetric requests (2000000), Number of asymmetric requests except RSA 2048 (), Number of ECC GenerateDataKeyPair requests ()"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
